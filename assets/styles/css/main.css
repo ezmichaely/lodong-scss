@@ -62,6 +62,7 @@
 }
 
 body {
+  overflow-x: hidden;
   font-family: "Inter", sans-serif !important;
 }
 
@@ -261,4 +262,35 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 1024px) {
+  #projectsPage #mobileView {
+    display: block;
+  }
+}
+@media (min-width: 1025px) {
+  #projectsPage #mobileView {
+    display: none;
+  }
+}
+#projectsPage #mobileView #projectWinLottery {
+  background-image: url("../../images/img/projects/winlottery/winlottery-main-mobile-bg.png");
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+#projectsPage #desktopView {
+  width: 100%;
+  background-color: black;
+}
+@media (max-width: 1024px) {
+  #projectsPage #desktopView {
+    display: none !important;
+  }
+}
+@media (min-width: 1025px) {
+  #projectsPage #desktopView {
+    display: block !important;
+  }
 }/*# sourceMappingURL=main.css.map */

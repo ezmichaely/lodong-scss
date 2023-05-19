@@ -1,0 +1,26 @@
+#weworkPage {
+    // border: 1px solid red;
+    #mobileView {
+        @include breakpoint-lg {
+            display: block;
+        }
+
+        @include breakpoint-lg-up {
+            display: none;
+        }
+    }
+
+    #desktopView {
+        // border: 1px solid red;
+        width: 100%;
+        background-color: black;
+
+        @include breakpoint-lg {
+            display: none !important;
+        }
+
+        @include breakpoint-lg-up {
+            display: block !important;
+        }
+    }
+}

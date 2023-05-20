@@ -14,7 +14,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
 
   <link rel="stylesheet" href="./assets/styles/css/main.min.css">
   <title>Lodong | Project - 돌봄대장</title>
@@ -27,13 +27,29 @@
           <img src="./assets/images/logo/lodong-icon.png" alt="lodong logo" class="h-[50px] lg:h-[65px]">
         </a>
         <!-- hamburger -->
-        <div class="block p-[0.5rem] border-2 border-transparent cursor-pointer hover:border-2 hover:border-black hover:rounded">
-          <i class="fa-solid fa-bars-staggered fa-flip-vertical fa-2xl text-white"></i>
+        <div id="menuBtn" class="block p-[0.5rem] text-white border-2 border-transparent cursor-pointer hover:border-2 hover:border-black hover:rounded">
+          <i class="fa-solid fa-bars-staggered fa-flip-vertical fa-2xl"></i>
         </div>
       </nav>
     </header>
 
-    <main>
+    <aside id="menuNav" class="fixed top-0 left-0 h-screen w-full z-50 bg-neutral-950">
+      <div class="relative h-screen w-full flex justify-center items-center flex-col">
+        <div class="flex justify-start items-center flex-col w-full gap-[50px]">
+          <a href="./index.html" class="w-full text-[24px] text-center text-white hover:font-bold">Home</a>
+          <a href="./aboutus.html" class=" w-full text-[24px] text-center text-white hover:font-bold">About Us</a>
+          <a href="./service.html" class="w-full text-[24px] text-center text-white hover:font-bold">Service</a>
+          <a href="./projects.html" class="font-bold w-full text-[24px] text-center text-white hover:font-bold">Projects</a>
+          <a href="./contact.html" class="text-[24px] font-bold text-jungle px-[2rem] py-[0.75rem] mt-[2rem] rounded-full border-2 border-transparent bg-[white] drop-shadow-lg hover:bg-transparent hover:text-[white] hover:border-[white]">Contact</a>
+        </div>
+
+        <div id="menuClose" class="absolute top-[30px] right-[25px] p-[0.75rem] border-2 border-transparent cursor-pointer hover:border-2 hover:border-[#FA2B2B] hover:rounded-full">
+          <i class="fa-solid fa-times fa-2xl text-carmine"></i>
+        </div>
+      </div>
+    </aside>
+
+    <main class="mb-[200px]">
       <section class="w-full mt-[30px]">
         <div class="px-[25px] flex justify-start items-center flex-row gap-x-[20px] text-white">
           <a href="./projects.html" class="flex justify-start items-center flex-row">
@@ -78,10 +94,90 @@
           </div>
         </div>
       </section>
+
+      <section class="w-full mt-[200px]">
+        <div class="w-full flex justify-center text-center">
+          <img src="./assets/images/img/projects/caremanager/01-mobile.png" alt="caremanager" class="w-full">
+        </div>
+
+        <div class="mt-[30px] w-full px-[25px] tracking-tight leading-loose text-white font-applesd font-medium opacity-60 text-[18px]">
+          <p>
+            <span>집에 거주하는 부모님이 필요로 하는 모든 서비스를</span> <br>
+            <span>제공하는 지역사회 통합돌봄 서비스입니다. </span> <br>
+          </p>
+          <p class="mt-[30px]">
+            <span>부모님이 살던 곳에서, 편안한 노후를 보낼 수 있는 개</span> <br>
+            <span>인 맞춤형 노후지원서비스 돌봄대장입니다.</span> <br>
+            <span></span> <br>
+          </p>
+        </div>
+
+        <div class="w-full flex justify-center text-center mt-[150px]">
+          <img src="./assets/images/img/projects/caremanager/02-mobile.png" alt="caremanager" class="w-[80%]">
+        </div>
+
+        <div class="mt-[30px] w-full px-[25px] tracking-tight leading-loose text-white font-applesd font-medium opacity-60 text-[18px]">
+          <p>
+            <span>회원에 대한 정보를 리스트화하여 정리하였습니다.</span> <br>
+          </p>
+        </div>
+
+        <div class="w-full mt-[150px]">
+          <div class="w-full flex justify-center text-center mt-[80px]">
+            <img src="./assets/images/img/projects/caremanager/03-mobile.png" alt="caremanager" class="w-full">
+          </div>
+
+          <h1 class="px-[25px] font-applesd text-[30px] text-white"> 설계 </h1>
+          <div class="mt-[30px] w-full px-[25px] tracking-tight leading-loose text-white font-applesd font-medium opacity-60 text-[18px]">
+            <p>
+              <span>전자기기가 익숙하지 않은 어르신들을 위해 간단하게 </span> <br>
+              <span>함축시킨 UI를 사용하여 한 눈에 보이도록 설계했습니다.</span> <br>
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full mt-[50px]">
+          <div class="w-full flex justify-start text-center mt-[20px] pr-[50px]">
+            <img src="./assets/images/img/projects/caremanager/04-mobile.png" alt="caremanager" class="w-full">
+          </div>
+        </div>
+
+        <div class="mt-[80px] w-full px-[25px] tracking-tight leading-loose text-white font-applesd font-medium opacity-60 text-[18px]">
+          <p>
+            <span>사용자가 버튼을 눌러 전화를 하면 받는 사람에게 회</span> <br>
+            <span>원정보가 뜹니다.</span> <br>
+          </p>
+        </div>
+
+        <div class="w-full mt-[200px]">
+          <div class="w-full flex justify-start text-center mt-[20px]">
+            <img src="./assets/images/img/projects/caremanager/05-mobile.png" alt="caremanager" class="w-full">
+          </div>
+        </div>
+
+        <div class="mt-[20px] w-full px-[25px] tracking-tight leading-loose text-white font-applesd font-medium opacity-60 text-[18px] text-right">
+          <p>
+            <span>배너, 상담, 회원정보를 관리자앱에서 </span> <br>
+            <span>등록, 관리 가능합니다.</span> <br>
+          </p>
+        </div>
+
+        
+        <div class="mt-[250px] w-full  tracking-tight leading-loose text-white font-applesd font-medium text-[18px]">
+          <h1 class="font-applesd text-[30px] text-white px-[25px]"> 관련기사 </h1>
+
+          <div class="w-full">
+            <div class="w-full flex justify-start text-center mt-[20px]">
+              <img src="./assets/images/img/projects/caremanager/06-mobile.png" alt="caremanager" class="w-full">
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
 
 
-    <div class="w-full text-center flex justify-center mb-[40px]">
+    <div class="w-full text-center flex justify-center mb-[100px]">
       <button type="button" id="scrollTop" class="rotate-180">
         <img src="./assets/images/icon/caretDownLight.png" alt="arrowUp" class="fa-bounce height-[50px]">
       </button>
@@ -210,7 +306,7 @@
           </p>
 
           <!-- hover:bg-white hover:text-black hover:font-bold -->
-          <a href="./caremanager-details.html" class="text-white text-[16px] px-[2.75rem] py-[0.85rem] bg-transparent rounded-full border-2 border-white hover:bg-white hover:text-black hover:font-bold">
+          <a href="./details-caremanager.html" class="text-white text-[16px] px-[2.75rem] py-[0.85rem] bg-transparent rounded-full border-2 border-white hover:bg-white hover:text-black hover:font-bold">
             <i class="fa-solid fa-plus"></i>
             <span class="ml-[10px] font-bold"> 더 보기 </span>
           </a>
@@ -273,6 +369,12 @@
   <script src="./assets/vendor/fontawesome/fontawesome.min.js"></script>
   <script src="./assets/js/dom.js"></script>
   <script src="./assets/js/function.js"></script>
-  <script>scrollToTop()</script>
+  <script>
+    scrollToTop();
+    if(window.innerWidth > 1025) {
+      const page = './details-caremanager.html';
+      openNextPageOnScrollDown(page);
+    }
+  </script>
 </body>
 </html>

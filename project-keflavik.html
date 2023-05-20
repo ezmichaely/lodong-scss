@@ -14,7 +14,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
   <link rel="stylesheet" href="./assets/styles/css/main.min.css">
   <title>Lodong | Project - Keflavik</title>
 </head>
@@ -26,13 +26,29 @@
           <img src="./assets/images/logo/lodong-icon.png" alt="lodong logo" class="h-[50px] lg:h-[65px]">
         </a>
         <!-- hamburger -->
-        <div class="block p-[0.5rem] border-2 border-transparent cursor-pointer hover:border-2 hover:border-black hover:rounded">
-          <i class="fa-solid fa-bars-staggered fa-flip-vertical fa-2xl text-white"></i>
+        <div id="menuBtn" class="block p-[0.5rem] text-white border-2 border-transparent cursor-pointer hover:border-2 hover:border-black hover:rounded">
+          <i class="fa-solid fa-bars-staggered fa-flip-vertical fa-2xl"></i>
         </div>
       </nav>
     </header>
 
-    <main class="mb-[120px]">
+    <aside id="menuNav" class="fixed top-0 left-0 h-screen w-full z-50 bg-neutral-950">
+      <div class="relative h-screen w-full flex justify-center items-center flex-col">
+        <div class="flex justify-start items-center flex-col w-full gap-[50px]">
+          <a href="./index.html" class="w-full text-[24px] text-center text-white hover:font-bold">Home</a>
+          <a href="./aboutus.html" class=" w-full text-[24px] text-center text-white hover:font-bold">About Us</a>
+          <a href="./service.html" class="w-full text-[24px] text-center text-white hover:font-bold">Service</a>
+          <a href="./projects.html" class="font-bold w-full text-[24px] text-center text-white hover:font-bold">Projects</a>
+          <a href="./contact.html" class="text-[24px] font-bold text-jungle px-[2rem] py-[0.75rem] mt-[2rem] rounded-full border-2 border-transparent bg-[white] drop-shadow-lg hover:bg-transparent hover:text-[white] hover:border-[white]">Contact</a>
+        </div>
+
+        <div id="menuClose" class="absolute top-[30px] right-[25px] p-[0.75rem] border-2 border-transparent cursor-pointer hover:border-2 hover:border-[#FA2B2B] hover:rounded-full">
+          <i class="fa-solid fa-times fa-2xl text-carmine"></i>
+        </div>
+      </div>
+    </aside>
+
+    <main class="mb-[200px]">
       <section class="w-full mt-[30px]">
         <div class="px-[25px] flex justify-start items-center flex-row gap-x-[20px] text-white">
           <a href="./projects.html" class="flex justify-start items-center flex-row">
@@ -156,7 +172,7 @@
       </section>
     </main>
 
-    <div class="w-full text-center flex justify-center mb-[60px]">
+    <div class="w-full text-center flex justify-center items-start mb-[100px]">
       <button type="button" id="scrollTop" class="rotate-180">
         <img src="./assets/images/icon/caretDownLight.png" alt="arrowUp" class="fa-bounce height-[50px]">
       </button>
@@ -285,7 +301,7 @@
           </p>
 
           <!-- hover:bg-white hover:text-black hover:font-bold -->
-          <a href="./keflavik-details.html" class="text-white text-[16px] px-[2.75rem] py-[0.85rem] bg-transparent rounded-full border-2 border-white hover:bg-white hover:text-black hover:font-bold">
+          <a href="./details-keflavik.html" class="text-white text-[16px] px-[2.75rem] py-[0.85rem] bg-transparent rounded-full border-2 border-white hover:bg-white hover:text-black hover:font-bold">
             <i class="fa-solid fa-plus"></i>
             <span class="ml-[10px] font-bold"> 더 보기 </span>
           </a>
@@ -347,6 +363,12 @@
   <script src="./assets/vendor/fontawesome/fontawesome.min.js"></script>
   <script src="./assets/js/dom.js"></script>
   <script src="./assets/js/function.js"></script>
-  <script>scrollToTop()</script>
+  <script>
+    scrollToTop()
+    if(window.innerWidth > 1025) {
+      const page = './details-keflavik.html';
+      openNextPageOnScrollDown(page);
+    }
+  </script>
 </body>
 </html>

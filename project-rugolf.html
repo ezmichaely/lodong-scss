@@ -14,7 +14,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
 
   <link rel="stylesheet" href="./assets/styles/css/main.min.css">
   <title>Lodong | Project - RU GOLF</title>
@@ -27,13 +27,29 @@
           <img src="./assets/images/logo/lodong-icon.png" alt="lodong logo" class="h-[50px] lg:h-[65px]">
         </a>
         <!-- hamburger -->
-        <div class="block p-[0.5rem] border-2 border-transparent cursor-pointer hover:border-2 hover:border-black hover:rounded">
-          <i class="fa-solid fa-bars-staggered fa-flip-vertical fa-2xl text-white"></i>
+        <div id="menuBtn" class="block p-[0.5rem] text-white border-2 border-transparent cursor-pointer hover:border-2 hover:border-black hover:rounded">
+          <i class="fa-solid fa-bars-staggered fa-flip-vertical fa-2xl"></i>
         </div>
       </nav>
     </header>
 
-    <main>
+    <aside id="menuNav" class="fixed top-0 left-0 h-screen w-full z-50 bg-neutral-950">
+      <div class="relative h-screen w-full flex justify-center items-center flex-col">
+        <div class="flex justify-start items-center flex-col w-full gap-[50px]">
+          <a href="./index.html" class="w-full text-[24px] text-center text-white hover:font-bold">Home</a>
+          <a href="./aboutus.html" class=" w-full text-[24px] text-center text-white hover:font-bold">About Us</a>
+          <a href="./service.html" class="w-full text-[24px] text-center text-white hover:font-bold">Service</a>
+          <a href="./projects.html" class="font-bold w-full text-[24px] text-center text-white hover:font-bold">Projects</a>
+          <a href="./contact.html" class="text-[24px] font-bold text-jungle px-[2rem] py-[0.75rem] mt-[2rem] rounded-full border-2 border-transparent bg-[white] drop-shadow-lg hover:bg-transparent hover:text-[white] hover:border-[white]">Contact</a>
+        </div>
+
+        <div id="menuClose" class="absolute top-[30px] right-[25px] p-[0.75rem] border-2 border-transparent cursor-pointer hover:border-2 hover:border-[#FA2B2B] hover:rounded-full">
+          <i class="fa-solid fa-times fa-2xl text-carmine"></i>
+        </div>
+      </div>
+    </aside>
+
+    <main class="mb-[200px]">
       <section class="w-full mt-[30px]">
         <div class="px-[25px] flex justify-start items-center flex-row gap-x-[20px] text-white">
           <a href="./projects.html" class="flex justify-start items-center flex-row">
@@ -78,10 +94,100 @@
           </div>
         </div>
       </section>
+
+
+      <section class="w-full mt-[200px]">
+        <div class="w-full flex justify-center text-center">
+          <img src="./assets/images/img/projects/rugolf/01-mobile.png" alt="rugolf" class="w-full">
+        </div>
+
+        <div class="mt-[30px] w-full px-[25px] tracking-tight leading-loose text-white font-applesd font-medium opacity-60 text-[18px]">
+          <p>
+            <span>스크린 골프 아카데미로 당일예약을 원칙으로 타석별,</span> <br>
+            <span>강사별로 예약할 수 있는 서비스입니다. </span> <br>
+          </p>
+          <p class="mt-[30px]">
+            <span>사용자가 원하는 시간에 예약하면 관리자용 웹으로 소</span> <br>
+            <span>리와 함께 알림이 떠 바로 확인이 가능합니다.</span> <br>
+            <br> <br>
+          </p>
+        </div>
+
+        <div class="w-full flex justify-center text-center mt-[150px]">
+          <img src="./assets/images/img/projects/rugolf/02-mobile.png" alt="rugolf" class="w-full">
+        </div>
+
+        <div class="mt-[50px] w-full px-[25px] tracking-tight leading-loose text-white font-applesd font-medium opacity-60 text-[18px]">
+          <p>
+            <span>내정보에서 예약목록들을 확인하고 레슨과 예약을 관리</span> <br>
+            <span>해보세요.</span> <br>
+          </p>
+        </div>
+
+
+        <div class="w-full flex justify-end text-center mt-[150px]">
+          <img src="./assets/images/img/projects/rugolf/03-mobile.png" alt="rugolf" class="w-3/5">
+        </div>
+
+        <div class="w-full flex justify-start text-center mt-[150px] ml-[-50px]">
+          <img src="./assets/images/img/projects/rugolf/03.png" alt="rugolf" class="w-full">
+        </div>
+
+        <div class="mt-[30px] w-full px-[25px] tracking-tight leading-loose text-white font-applesd font-medium opacity-60 text-[18px]">
+          <p class="text-center">
+            <span>다양한 강사들에게 레슨을 예약할 수 있습니다.</span> <br>
+          </p>
+        </div>
+
+        <div class="w-full mt-[150px]">
+          <h1 class="px-[25px] font-applesd text-[30px] text-white"> WEB </h1>
+
+          <div class="w-full flex justify-center text-center mt-[80px] px-[25px]">
+            <img src="./assets/images/img/projects/rugolf/05.png" alt="rugolf" class="w-full">
+          </div>
+
+          <h1 class="px-[25px] font-applesd text-[30px] text-white mt-[100px]"> 설계 </h1>
+          <div class="mt-[30px] w-full px-[25px] tracking-tight leading-loose text-white font-applesd font-medium opacity-60 text-[18px]">
+            <p>
+              <span>예약정보를 웹사트로 불러와 알림이 울리고 카테고리 </span> <br>
+              <span>별로 예약현황을 알 수 있습니다.</span> <br>
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full mt-[250px]">
+          <div class="w-full flex justify-start text-center mt-[20px]">
+            <img src="./assets/images/img/projects/rugolf/06-mobile.png" alt="rugolf" class="w-full">
+          </div>
+        </div>
+
+        <div class="mt-[80px] w-full px-[25px] tracking-tight leading-loose text-white font-applesd font-medium text-[18px]">
+          <h1 class="font-applesd text-[30px] text-white"> 상호작용하는 웹/앱 </h1>
+
+          <p class="opacity-60 mt-[30px]">
+            <span>앱에서 예약한 정보를 통해 웹에 알림이 뜹니다.</span> <br>
+            <span>웹에서 예약 관리도 함께 할 수 있습니다.</span> <br>
+          </p>
+        </div>
+
+
+        <div class="w-full mt-[250px]">
+          <div class="w-full flex justify-start text-center mt-[20px]">
+            <img src="./assets/images/img/projects/rugolf/07-mobile.png" alt="rugolf" class="w-full">
+          </div>
+        </div>
+
+        <div class="mt-[50px] w-full px-[25px] tracking-tight leading-loose text-white font-applesd font-medium text-[18px]">
+          <p class="opacity-60 mt-[30px]">
+            <span>타석, 시간별로 어떤 고객이 예약했는지 <span class="font-bold">정리 해</span></span> <br>
+            <span><span class="font-bold">주는</span>페이지를 구현했습니다.</span> <br>
+          </p>
+        </div>
+      </section>
     </main>
 
 
-    <div class="w-full text-center flex justify-center mb-[40px]">
+    <div class="w-full text-center flex justify-center items-start mb-[100px]">
       <button type="button" id="scrollTop" class="rotate-180">
         <img src="./assets/images/icon/caretDownLight.png" alt="arrowUp" class="fa-bounce height-[50px]">
       </button>
@@ -210,7 +316,7 @@
           </p>
 
           <!-- hover:bg-white hover:text-black hover:font-bold -->
-          <a href="./rugolf-details.html" class="text-white text-[16px] px-[2.75rem] py-[0.85rem] bg-transparent rounded-full border-2 border-white hover:bg-white hover:text-black hover:font-bold">
+          <a href="./details-rugolf.html" class="text-white text-[16px] px-[2.75rem] py-[0.85rem] bg-transparent rounded-full border-2 border-white hover:bg-white hover:text-black hover:font-bold">
             <i class="fa-solid fa-plus"></i>
             <span class="ml-[10px] font-bold"> 더 보기 </span>
           </a>
@@ -274,6 +380,12 @@
   <script src="./assets/vendor/fontawesome/fontawesome.min.js"></script>
   <script src="./assets/js/dom.js"></script>
   <script src="./assets/js/function.js"></script>
-  <script>scrollToTop()</script>
+  <script>
+    scrollToTop();
+    if(window.innerWidth > 1025) {
+      const page = './details-rugolf.html';
+      openNextPageOnScrollDown(page);
+    }
+  </script>
 </body>
 </html>

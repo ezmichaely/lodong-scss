@@ -14,7 +14,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
 
   <link rel="stylesheet" href="./assets/styles/css/main.min.css">
   <title>Lodong | Project - 내 꿈은 로또 1등</title>
@@ -27,13 +27,29 @@
           <img src="./assets/images/logo/lodong-icon.png" alt="lodong logo" class="h-[50px] lg:h-[65px]">
         </a>
         <!-- hamburger -->
-        <div class="block p-[0.5rem] border-2 border-transparent cursor-pointer hover:border-2 hover:border-black hover:rounded">
-          <i class="fa-solid fa-bars-staggered fa-flip-vertical fa-2xl text-white"></i>
+        <div id="menuBtn" class="block p-[0.5rem] text-white border-2 border-transparent cursor-pointer hover:border-2 hover:border-black hover:rounded">
+          <i class="fa-solid fa-bars-staggered fa-flip-vertical fa-2xl"></i>
         </div>
       </nav>
     </header>
 
-    <main>
+    <aside id="menuNav" class="fixed top-0 left-0 h-screen w-full z-50 bg-neutral-950">
+      <div class="relative h-screen w-full flex justify-center items-center flex-col">
+        <div class="flex justify-start items-center flex-col w-full gap-[50px]">
+          <a href="./index.html" class="w-full text-[24px] text-center text-white hover:font-bold">Home</a>
+          <a href="./aboutus.html" class=" w-full text-[24px] text-center text-white hover:font-bold">About Us</a>
+          <a href="./service.html" class="w-full text-[24px] text-center text-white hover:font-bold">Service</a>
+          <a href="./projects.html" class="font-bold w-full text-[24px] text-center text-white hover:font-bold">Projects</a>
+          <a href="./contact.html" class="text-[24px] font-bold text-jungle px-[2rem] py-[0.75rem] mt-[2rem] rounded-full border-2 border-transparent bg-[white] drop-shadow-lg hover:bg-transparent hover:text-[white] hover:border-[white]">Contact</a>
+        </div>
+
+        <div id="menuClose" class="absolute top-[30px] right-[25px] p-[0.75rem] border-2 border-transparent cursor-pointer hover:border-2 hover:border-[#FA2B2B] hover:rounded-full">
+          <i class="fa-solid fa-times fa-2xl text-carmine"></i>
+        </div>
+      </div>
+    </aside>
+
+    <main class="mb-[200px]">
       <section class="w-full">
         <div id="projectWinLottery" class="pt-[30px] mb-[50px] border border-transparent">
           <div class="px-[25px] flex justify-start items-center flex-row gap-x-[20px] text-white">
@@ -55,7 +71,7 @@
           <h1 class="text-[45px] font-bold text-white">내꿈은 로또 1등</h1>
         </div>
 
-        <div class="w-full px-[50px] text-center mb-[150px]">
+        <div class="w-full px-[50px] text-center mb-[50px]">
           <div class="w-full flex justify-center items-middle flex-row flex-wrap gap-[20px]">
             <p class="text-white tracking-tight text-[17px]">
               <span class="font-bold mr-[20px]">Client</span>
@@ -80,9 +96,64 @@
           </div>
         </div>
       </section>
+
+      <section class="w-full mt-[10px]">
+        <div class=" w-full flex justify-center text-center">
+          <img src="./assets/images/img/projects/winlottery/01-mobile.png" alt="winlottery" class="w-full">
+        </div>
+
+
+        <div class="mt-[30px] w-full px-[25px] tracking-tight leading-loose text-white font-applesd font-medium opacity-60 text-[18px]">
+          <p>
+            <span>그 날 꿨던 꿈을 입력하면 그에 해당하는 로또번호를</span> <br>
+            <span>추출하는 서비스입니다. 과연 오늘, 당신의 꿈은 어떤</span> <br>
+            <span>행운의 번호를 가지고 올까요?</span> <br>
+          </p>
+        </div>
+
+        <div class="w-full mt-[150px]">
+          <div class="w-full flex justify-center text-center mt-[80px] pl-[25px]">
+            <img src="./assets/images/img/projects/winlottery/02-mobile.png" alt="winlottery" class="w-full">
+          </div>
+
+          <h1 class="px-[25px] font-applesd text-[30px] text-white mt-[50px]"> 설계 </h1>
+          <div class="mt-[30px] w-full px-[25px] tracking-tight leading-loose text-white font-applesd font-medium opacity-60 text-[18px]">
+            <p>
+              <span>입력한 꿈의 내용에서 키워드를 추출합니다. 그 키워드</span> <br>
+              <span>에 해당하는 번호를 부여하고 그것이 곧 로또 번호가 </span> <br>
+              <span>됩니다.</span> <br>
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full mt-[100px]">
+          <div class="w-full flex justify-start text-center mt-[20px]">
+            <img src="./assets/images/img/projects/winlottery/03-mobile.png" alt="winlottery" class="w-full">
+          </div>
+        </div>
+
+        <div class="mt-[50px] w-full px-[25px] tracking-tight leading-loose text-white font-applesd font-medium opacity-60 text-[18px]">
+          <p>
+            <span>조합된 번호의 당첨 여부를 바로 확인해보세요. 과거 어</span> <br>
+            <span>떤 번호가 추출되었는지 기록되어 있습니다.</span> <br>
+          </p>
+        </div>
+
+        <div class="w-full flex justify-start text-center mt-[150px]">
+          <img src="./assets/images/img/projects/winlottery/04-mobile.png" alt="winlottery" class="w-full">
+        </div>
+
+
+        <div class="mt-[50px] w-full px-[25px] tracking-tight leading-loose text-white font-applesd font-medium opacity-60 text-[18px] text-center">
+          <p>
+            <span>포인트를 쌓아 명예의 전당에 올라보세요.</span> <br>
+          </p>
+        </div>
+
+      </section>
     </main>
 
-    <div class="w-full text-center flex justify-center mb-[40px]">
+    <div class="w-full text-center flex justify-center mb-[100px]">
       <button type="button" id="scrollTop" class="rotate-180">
         <img src="./assets/images/icon/caretDownLight.png" alt="arrowUp" class="fa-bounce height-[50px]">
       </button>
@@ -162,7 +233,7 @@
 
   <div id="desktopView">
     <!-- desktop view -->
-    <header class="sticky top-0 left-0 bg-black z-40">
+    <header class="bg-black z-40">
       <nav class="flex justify-between items-center flex-row flex-nowrap py-[1.5rem] px-[2rem] lg:px-[90px]">
         <a href="./index.html" class="h-[50px] lg:h-[65px]">
           <img src="./assets/img/logo/lodong-icon.png" alt="lodong logo" class="h-[50px] lg:h-[65px]">
@@ -211,7 +282,7 @@
           </p>
 
           <!-- hover:bg-white hover:text-black hover:font-bold -->
-          <a href="./winlottery-details.html" class="text-white text-[16px] px-[2.75rem] py-[0.85rem] bg-transparent rounded-full border-2 border-white hover:bg-white hover:text-black hover:font-bold">
+          <a href="./details-winlottery.html" class="text-white text-[16px] px-[2.75rem] py-[0.85rem] bg-transparent rounded-full border-2 border-white hover:bg-white hover:text-black hover:font-bold">
             <i class="fa-solid fa-plus"></i>
             <span class="ml-[10px] font-bold"> 더 보기 </span>
           </a>
@@ -273,6 +344,12 @@
   <script src="./assets/vendor/fontawesome/fontawesome.min.js"></script>
   <script src="./assets/js/dom.js"></script>
   <script src="./assets/js/function.js"></script>
-  <script>scrollToTop()</script>
+  <script>
+    scrollToTop();
+    if(window.innerWidth > 1025) {
+      const page = './details-winlottery.html';
+      openNextPageOnScrollDown(page);
+    }
+  </script>
 </body>
 </html>

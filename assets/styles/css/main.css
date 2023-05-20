@@ -112,6 +112,15 @@ body {
   background: #404041;
 }
 
+#menuNav {
+  letter-spacing: -0.05em;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+#menuNav.open {
+  transform: translateY(0%);
+}
+
 @media (max-width: 1024px) {
   #homePage #mobileView {
     display: block;
@@ -257,11 +266,46 @@ body {
   display: block;
 }
 
-#contact {
-  background: url("../../img/bg/bg-contact.png");
+@media (max-width: 1024px) {
+  #contactPage #mobileView {
+    display: block;
+  }
+}
+@media (min-width: 1025px) {
+  #contactPage #mobileView {
+    display: none;
+  }
+}
+#contactPage #mobileView .heroSection {
+  background: url("../../images/bg/bg-contact-mobile.png");
+  background-size: cover;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  height: 548px;
+}
+#contactPage #mobileView .heroSection .headerMain {
+  height: 548px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+}
+#contactPage #desktopView {
+  background: url("../../images/bg/bg-contact.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  #contactPage #desktopView {
+    display: none !important;
+  }
+}
+@media (min-width: 1025px) {
+  #contactPage #desktopView {
+    display: block !important;
+  }
 }
 
 @media (max-width: 1024px) {

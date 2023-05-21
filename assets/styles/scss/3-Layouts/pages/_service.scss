@@ -7,6 +7,15 @@
         @include breakpoint-lg-up {
             display: none;
         }
+
+        .services-circle {
+            &:hover {
+                background: #2B2A2A;
+                .title { color: white; }
+                .first { display: none; }
+                .second { display: block; }
+            }
+        }
     }
 
     #desktopView {

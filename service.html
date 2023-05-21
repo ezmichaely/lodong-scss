@@ -13,12 +13,13 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 
-  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"> -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./assets/vendor/splidejs/css/splide.css">
   <link rel="stylesheet" href="./assets/styles/css/main.min.css">
   <title>Lodong | Service</title>
 </head>
-<body id="servicePage" class="">
+<body id="servicePage">
   <div id="mobileView">
     <header>
       <nav class="w-full flex justify-between items-center flex-row flex-nowrap py-[1.5rem] px-[25px]">
@@ -32,9 +33,9 @@
       </nav>
     </header>
 
-    <aside id="menuNav" class="fixed top-0 left-0 h-screen w-full z-50 bg-neutral-950">
-      <div class="relative h-screen w-full flex justify-center items-center flex-col">
-        <div class="flex justify-start items-center flex-col w-full gap-[50px]">
+    <aside id="menuNav" class="fixed top-0 left-0 h-[100dvh] w-full z-50 bg-neutral-950">
+      <div class="relative h-[100dvh] w-full flex justify-center items-center flex-col">
+        <div class="flex justify-start items-center flex-col w-full gap-y-[20px]">
           <a href="./index.html" class="w-full text-[24px] text-center text-white hover:font-bold">Home</a>
           <a href="./aboutus.html" class="w-full text-[24px] text-center text-white hover:font-bold">About Us</a>
           <a href="./service.html" class="font-bold w-full text-[24px] text-center text-white hover:font-bold">Service</a>
@@ -49,21 +50,148 @@
     </aside>
 
     <main class="h-[820px] mb-[100px]">
+      <h1 class="text-center font-extrabold text-[65px] text-jungle mb-[100px]">Service</h1>
+      <section class="splide flex justify-center items-center flex-col w-[screen]" aria-label="Splide Basic HTML Example">
 
 
-      <section class="splide" aria-label="Splide Basic HTML Example">
         <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">Slide 01</li>
-            <li class="splide__slide">Slide 02</li>
-            <li class="splide__slide">Slide 03</li>
+          <ul class="splide__list ">
+
+            <li class="splide__slide flex justify-center items-center">
+              <div class="services-circle relative min-w-[380px] h-[380px] w-[380px] max-w-[380px] px-[auto] rounded-full border border-2 border-[#242424]">
+                <div class="h-full w-full flex justify-center items-center flex-col">
+                  <div class="first text-center">
+                    <h2 class="title font-bold text-[50px] text-jungle tracking-tighter">APP</h2>
+                    <p class="text-[20px] text-jungle opacity-60">Android / iOS 앱 개발</p>
+                  </div>
+
+                  <div class="second hidden text-center">
+                    <h2 class="title font-bold text-[50px] text-jungle tracking-tighter mt-[-20px]">APP</h2>
+                    <p class="mt-[10px] text-[16px] text-white opacity-60 tracking-tighter px-[25px]">
+                      <span>고객들에게 최적의 개인화 경험과 비즈니스 성과 </span> <br>
+                      <span>를 향상시키기 위한 맞춤형 개발 솔루션 제공. </span> <br>
+                      <span>고객들에게 최적의 개인화 경험 제공</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="splide__slide flex justify-center items-center">
+              <div class="services-circle relative min-w-[380px] h-[380px] w-[380px] max-w-[380px] px-[auto] rounded-full border border-2 border-[#242424]">
+                <div class="h-full w-full flex justify-center items-center flex-col">
+                  <div class="first text-center">
+                    <h2 class="title font-bold text-[50px] text-jungle tracking-tighter">Web</h2>
+                    <p class="text-[20px] text-jungle opacity-60">웹 구축</p>
+                  </div>
+
+                  <div class="second hidden text-center">
+                    <h2 class="title font-bold text-[50px] text-jungle tracking-tighter mt-[-20px]">Web</h2>
+                    <p class="mt-[10px] text-[16px] text-white opacity-60 tracking-tighter px-[25px]">
+                      <span>고객들에게 최적의 개인화 경험과 비즈니스 성과 </span> <br>
+                      <span>를 향상시키기 위한 맞춤형 개발 솔루션 제공. </span> <br>
+                      <span>고객들에게 최적의 개인화 경험 제공</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="splide__slide flex justify-center items-center">
+              <div class="services-circle relative min-w-[380px] h-[380px] w-[380px] max-w-[380px] px-[auto] rounded-full border border-2 border-[#242424]">
+                <div class="h-full w-full flex justify-center items-center flex-col">
+                  <div class="first text-center">
+                    <h2 class="title font-bold text-[50px] text-jungle tracking-tighter">AI</h2>
+                    <p class="text-[20px] text-jungle opacity-60">인공지능</p>
+                  </div>
+
+                  <div class="second hidden text-center">
+                    <h2 class="title font-bold text-[50px] text-jungle tracking-tighter mt-[-20px]">AI</h2>
+                    <p class="mt-[10px] text-[16px] text-white opacity-60 tracking-tighter px-[25px]">
+                      <span>고객들에게 최적의 개인화 경험과 비즈니스 성과 </span> <br>
+                      <span>를 향상시키기 위한 맞춤형 개발 솔루션 제공. </span> <br>
+                      <span>고객들에게 최적의 개인화 경험 제공</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="splide__slide flex justify-center items-center">
+              <div class="services-circle relative min-w-[380px] h-[380px] w-[380px] max-w-[380px] px-[auto] rounded-full border border-2 border-[#242424]">
+                <div class="h-full w-full flex justify-center items-center flex-col">
+                  <div class="first text-center">
+                    <h2 class="title font-bold text-[50px] text-jungle tracking-tighter">Platform</h2>
+                    <p class="text-[20px] text-jungle opacity-60">플랫폼 구축</p>
+                  </div>
+
+                  <div class="second hidden text-center">
+                    <h2 class="title font-bold text-[50px] text-jungle tracking-tighter mt-[-20px]">Platform</h2>
+                    <p class="mt-[10px] text-[16px] text-white opacity-60 tracking-tighter px-[25px]">
+                      <span>고객들에게 최적의 개인화 경험과 비즈니스 성과 </span> <br>
+                      <span>를 향상시키기 위한 맞춤형 개발 솔루션 제공. </span> <br>
+                      <span>고객들에게 최적의 개인화 경험 제공</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="splide__slide flex justify-center items-center">
+              <div class="services-circle relative min-w-[380px] h-[380px] w-[380px] max-w-[380px] px-[auto] rounded-full border border-2 border-[#242424]">
+                <div class="h-full w-full flex justify-center items-center flex-col">
+                  <div class="first text-center">
+                    <h2 class="title font-bold text-[50px] text-jungle tracking-tighter">Software</h2>
+                    <p class="text-[20px] text-jungle opacity-60">안드로이드 / iOS 앱 개발</p>
+                  </div>
+
+                  <div class="second hidden text-center">
+                    <h2 class="title font-bold text-[50px] text-jungle tracking-tighter mt-[-20px]">Software</h2>
+                    <p class="mt-[10px] text-[16px] text-white opacity-60 tracking-tighter px-[25px]">
+                      <span>고객들에게 최적의 개인화 경험과 비즈니스 성과 </span> <br>
+                      <span>를 향상시키기 위한 맞춤형 개발 솔루션 제공. </span> <br>
+                      <span>고객들에게 최적의 개인화 경험 제공</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+
+            <li class="splide__slide flex justify-center items-center">
+              <div class="services-circle relative min-w-[380px] h-[380px] w-[380px] max-w-[380px] px-[auto] rounded-full border border-2 border-[#242424]">
+                <div class="h-full w-full flex justify-center items-center flex-col">
+                  <div class="first text-center">
+                    <h2 class="title font-bold text-[50px] text-jungle tracking-tighter">ETC</h2>
+                    <p class="text-[20px] text-jungle opacity-60">기타</p>
+                  </div>
+
+                  <div class="second hidden text-center">
+                    <h2 class="title font-bold text-[50px] text-jungle tracking-tighter mt-[-20px]">ETC</h2>
+                    <p class="mt-[10px] text-[16px] text-white opacity-60 tracking-tighter px-[25px]">
+                      <span>고객들에게 최적의 개인화 경험과 비즈니스 성과 </span> <br>
+                      <span>를 향상시키기 위한 맞춤형 개발 솔루션 제공. </span> <br>
+                      <span>고객들에게 최적의 개인화 경험 제공</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+
+
+            
           </ul>
+        </div>
+
+        <div id="splideTracker" class="splideTracker text-center w-full mt-[100px]">
+          
         </div>
       </section>
 
 
-      <section class="h-full w-full px-[25px] flex justify-around flex-col">
-        <h1 class="text-center font-extrabold text-[65px] text-jungle">Service</h1>
+      <!-- <section class="h-full w-full px-[25px] flex justify-around flex-col">
+        
 
 
         <div class="w-full flex justify-center align-center">
@@ -87,7 +215,7 @@
 
 
 
-      </section>
+      </section> -->
 
     </main>
 
@@ -350,5 +478,16 @@
   <script src="./assets/vendor/fontawesome/fontawesome.min.js"></script>
   <script src="./assets/js/dom.js"></script>
   <script src="./assets/js/function.js"></script>
+
+  <script>
+  document.addEventListener( 'DOMContentLoaded', function() {
+    const splide = new Splide( '.splide', {
+      arrows: false,
+    });
+    splide.mount();
+  });
+
+
+</script>
 </body>
 </html>

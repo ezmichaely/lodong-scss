@@ -63,6 +63,7 @@
 
 body {
   height: 100vh;
+  width: 100vw;
   overflow-x: hidden !important;
   font-family: "Inter", sans-serif !important;
 }
@@ -114,12 +115,17 @@ body {
 }
 
 #menuNav {
+  height: 100dvh !important;
   letter-spacing: -0.05em;
   transform: translateY(-100%);
   transition: transform 0.3s ease-in-out;
 }
 #menuNav.open {
   transform: translateY(0%);
+}
+
+.splide .splide__arrows * {
+  display: none !important;
 }
 
 @media (max-width: 1024px) {
@@ -239,6 +245,18 @@ body {
   #servicePage #mobileView {
     display: none;
   }
+}
+#servicePage #mobileView .services-circle:hover {
+  background: #2B2A2A;
+}
+#servicePage #mobileView .services-circle:hover .title {
+  color: white;
+}
+#servicePage #mobileView .services-circle:hover .first {
+  display: none;
+}
+#servicePage #mobileView .services-circle:hover .second {
+  display: block;
 }
 #servicePage #desktopView {
   width: 100%;

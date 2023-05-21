@@ -62,7 +62,8 @@
 }
 
 body {
-  overflow-x: hidden;
+  height: 100vh;
+  overflow-x: hidden !important;
   font-family: "Inter", sans-serif !important;
 }
 

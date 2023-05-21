@@ -14,7 +14,10 @@
   <meta name="theme-color" content="#ffffff">
 
   <script src="https://cdn.tailwindcss.com"></script>
-
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   <link rel="stylesheet" href="./assets/styles/css/main.min.css">
   <title>Lodong | Home</title>
 </head>
@@ -33,7 +36,7 @@
             </div>
           </nav>
         </header>
-        <div class="px-[25px] pb-[35px] w-full text-end">
+        <div class="animate__animated animate__fadeInRight px-[25px] pb-[35px] w-full text-end">
           <p class="text-white font-kumbhsans text-end" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.8);">
             <span class="text-[40px] font-nanumbrush">실패 경험 </span>
             <span class="text-[23px] font-medium">&nbsp;ZERO</span><br/>
@@ -64,7 +67,7 @@
     </aside>
 
     <main>
-      <div class="w-full flex justify-center items-start pt-[60px] px-[25px]">
+      <div class="animate__animated animate__fadeInLeft w-full flex justify-center items-start pt-[60px] px-[25px]">
         <div class="font-applesd w-full font-extrabold tracking-[-0.05em] text-[35px] text-left">
           <p class="text-[#242424] opacity-60 ">We Develop Innovative</p>
           <div class="text-[#242424] opacity-80 w-full flex justify-start items-start flex-row flex-nowrap">
@@ -76,7 +79,7 @@
       </div>
 
       <div class="my-[100px] w-full flex justify-center items-center">
-        <a href="./wework.html" class="text-white cursor-pointer ">
+        <a href="./wework.html" class="animate__animated animate__bounceInDown text-white cursor-pointer ">
           <img src="./assets/images/icon/caretDownDark.png" alt="arrow-down" class="fa-bounce height-[50px]">
         </a>
       </div>
@@ -128,7 +131,7 @@
       <section class="min-h-[calc(100vh_-_98px)] lg:min-h-[calc(100vh_-_113px)] flex justify-start items-start flex-col">
         <article class="w-full min-h-[calc(100vh_-_31vh_-_98px)] lg:min-h-[calc(100vh_-_31vh_-_113px)] flex justify-end items-end flex-row text-white"
           style="background-image: linear-gradient(to left top, rgba(0,0,0,0.82) 1%, transparent 40%);">
-          <div class="px-[2rem] lg:px-[90px]" >
+          <div class="animate__animated animate__fadeInRight px-[2rem] lg:px-[90px]" >
             <p class="text-white font-kumbhsans text-end " style="text-shadow: 2px 2px 8px rgba(0,0,0,0.8);">
               <span class="text-[24px] lg:text-[31px] font-medium">실패 경험 </span>
               <span class="text-[36px] lg:text-[45px] font-bold">&nbsp;ZERO</span><br/>
@@ -144,7 +147,7 @@
           <div class="w-full h-full flex justify-center lg:justify-between items-start flex-col lg:flex-row flex-wrap lg:flex-nowrap">
             <!-- text -->
             <div class="w-full xxx flex justify-center items-center lg:items-stretch pt-[1rem]">
-              <div class="w-full lg:w-[calc(100vw_-_690px)] font-bold tracking-[-0.010em] leading-[1.10] text-[32px] md:text-[45px] lg:text-[53px] xl:text-[72px] text-center lg:text-left">
+              <div class="animate__animated animate__fadeInLeft w-full lg:w-[calc(100vw_-_690px)] font-bold tracking-[-0.010em] leading-[1.10] text-[32px] md:text-[45px] lg:text-[53px] xl:text-[72px] text-center lg:text-left">
                 <p class="text-white whitespace-nowrap">We Develop Innovative</p>
                 <p class="text-[#6A6A6A] whitespace-nowrap">Digital Solutions</p>
                 <div class="w-full flex justify-center lg:justify-start items-center flex-row flex-wrap lg:flex-nowrap">
@@ -157,7 +160,7 @@
             <!-- arrow -->
             <div class="w-full flex items-stretch ml-[1rem]">
               <div class="w-full lg:h-[calc(201px_-_1rem)] xl:h-[calc(272px_-_1rem)] pt-[1rem] my-[2rem] lg:my-0 flex justify-center lg:justify-end items-center lg:items-end lg:flex-nowrap">
-                <a href="./wework.html" class="text-white cursor-pointer ">
+                <a href="./wework.html" class="animate__animated animate__bounceInDown text-white cursor-pointer ">
                   <img src="./assets/images/icon/caretDownLight.png" alt="arrow-down" class="fa-bounce height-[50px] lg:height-[60px]">
                 </a>
               </div>
@@ -176,8 +179,6 @@
   <script src="./assets/js/function.js"></script>
 
   <script>
-
-    const page = './wework.html';
 
     if(window.innerWidth > 1025) {
       const page = './wework.html';

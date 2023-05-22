@@ -15,6 +15,10 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   <link rel="stylesheet" href="./assets/styles/css/main.min.css">
   <title>Lodong | Projects</title>
 </head>
@@ -49,10 +53,10 @@
     </aside>
 
     <main class="mb-[100px]">
-      <h1 class="my-[50px] text-center font-extrabold text-[65px] text-jungle tracking-tight">Projects</h1>
+      <h1 class="animate__animated animate__zoomIn my-[50px] text-center font-extrabold text-[65px] text-jungle tracking-tight">Projects</h1>
 
       <section class="w-full px-[25px]">
-        <div class="w-full flex justify-end items-center flex-row border border-4 border-black h-[60px] rounded-[20px] py-0 bg-white rounded text-black">
+        <div class="animate__animated animate__rubberBand w-full flex justify-end items-center flex-row border border-4 border-black h-[60px] rounded-[20px] py-0 bg-white rounded text-black">
           <input type="search" class="grow h-full text-center border-0 bg-transparent focus:shadow-none focus:outline-none focus:border-transparent focus:ring-0"
               placeholder="찾으시는 프로젝트가 있으신가요?">
           <button>
@@ -62,17 +66,17 @@
 
         <div class="my-[30px]">
           <div class="w-full flex justify-center items-center flex-wrap gap-x-[25px] flex-wrap text-carmine">
-            <p class="leading-loose text-[18px] whitespace-nowrap"># 안드로이드  Android</p>
-            <p class="leading-loose text-[18px] whitespace-nowrap"># Web 구축</p>
-            <p class="leading-loose text-[18px] whitespace-nowrap"># iOS</p>
-            <p class="leading-loose text-[18px] whitespace-nowrap"># Kiosk 키오스크</p>
-            <p class="leading-loose text-[18px] whitespace-nowrap"># 플랫폼</p>
-            <p class="leading-loose text-[18px] whitespace-nowrap"># 소프트웨어</p>
+            <p class="animate__animated animate__fadeInLeftBig leading-loose text-[18px] whitespace-nowrap"># 안드로이드  Android</p>
+            <p class="animate__animated animate__zoomIn leading-loose text-[18px] whitespace-nowrap"># Web 구축</p>
+            <p class="animate__animated animate__fadeInRightBig leading-loose text-[18px] whitespace-nowrap"># iOS</p>
+            <p class="animate__animated animate__fadeInLeftBig leading-loose text-[18px] whitespace-nowrap"># Kiosk 키오스크</p>
+            <p class="animate__animated animate__zoomIn leading-loose text-[18px] whitespace-nowrap"># 플랫폼</p>
+            <p class="animate__animated animate__fadeInRightBig leading-loose text-[18px] whitespace-nowrap"># 소프트웨어</p>
           </div>
         </div>
 
         <div class="mt-[100px] mb-[50px] w-full flex justify-end items-end flex-row">
-          <div class="w-fit h-[40px] flex justify-end items-center flex-row bg-[#2B2A2A] text-white px-[20px] rounded-[12px]">
+          <div class="animate__animated animate__bounceInUp w-fit h-[40px] flex justify-end items-center flex-row bg-[#2B2A2A] text-white px-[20px] rounded-[12px]">
             <p class="whitespace-nowrap tracking-tight">All Projects</p>
             <i class="fa-sharp fa-regular fa-angle-down ml-[8px]"></i>
           </div>
@@ -80,162 +84,178 @@
       </section>
 
       <section class="w-full px-[25px] mb-[70px]">
-        <div class="w-full flex justify-center items-start flex-row flex-wrap gap-[70px]">
+        <div class="aniUtil_scrollDiv w-full flex justify-center items-start flex-row flex-wrap gap-[70px]">
           
-          <a href="./project-keflavik.html" class="h-[330px] w-full rounded-[20px] bg-[#E8D265] drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
-            <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
-              <p class="leading-tighter text-white opacity-65 text-[13px]">Android app / Web</p>
-              <h2 class="font-bold leading-tighter text-white text-[25px]">케플라비크</h2>
+          <div class="ani_bounceInLeft aniUtil_dramatic w-full">
+            <a href="./project-keflavik.html" class="ani_tada aniUtil_onMouse aniUtil_active aniUtil_onMouseRepeat h-[330px] w-full rounded-[20px] bg-[#E8D265] drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
+              <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
+                <p class="leading-tighter text-white opacity-65 text-[13px]">Android app / Web</p>
+                <h2 class="font-bold leading-tighter text-white text-[25px]">케플라비크</h2>
+  
+                <img src="./assets/images/img/projects/keflavik/keflavik-sub.png" alt="keflavik" class="absolute bottom-[45%] right-0">
+  
+                <p class="leading-tighter text-white opacity-[65%] text-[15px] mt-[10px]">
+                  <span>#  안드로이드  Android</span>
+                  <span>#  Web 구축</span> <br>
+                  <span>#  Web 구축</span>
+                  <span>#  안드로이드  Android</span>
+                </p>
+              </div>
+            </a>
+          </div>
 
-              <img src="./assets/images/img/projects/keflavik/keflavik-sub.png" alt="keflavik" class="absolute bottom-[45%] right-0">
+          <div class="ani_bounceInRight aniUtil_dramatic w-full">
+            <a href="./project-rugolf.html" class="ani_tada aniUtil_onMouse aniUtil_active aniUtil_onMouseRepeat h-[330px] w-full rounded-[20px] bg-[#26A38B] drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
+              <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
+                <p class="leading-tighter text-white opacity-65 text-[13px]">Android app / Web</p>
+                <h2 class="font-bold leading-tighter text-white text-[25px]">RU GOLF</h2>
 
-              <p class="leading-tighter text-white opacity-[65%] text-[15px] mt-[10px]">
-                <span>#  안드로이드  Android</span>
-                <span>#  Web 구축</span> <br>
-                <span>#  Web 구축</span>
-                <span>#  안드로이드  Android</span>
-              </p>
-            </div>
-          </a>
+                <img src="./assets/images/img/projects/rugolf/rugolf-sub.png" alt="rugolf" class="absolute bottom-[50%] right-[5%]">
 
-          <a href="./project-rugolf.html" class="h-[330px] w-full rounded-[20px] bg-[#26A38B] drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
-            <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
-              <p class="leading-tighter text-white opacity-65 text-[13px]">Android app / Web</p>
-              <h2 class="font-bold leading-tighter text-white text-[25px]">RU GOLF</h2>
+                <p class="leading-tighter text-white opacity-[65%] text-[15px] mt-[10px]">
+                  <span>#  안드로이드  Android</span>
+                  <span>#  Web 구축</span> <br>
+                  <span>#  Web 구축</span>
+                  <span>#  안드로이드  Android</span>
+                </p>
+              </div>
+            </a>
+          </div>
 
-              <img src="./assets/images/img/projects/rugolf/rugolf-sub.png" alt="rugolf" class="absolute bottom-[50%] right-[5%]">
+          <div class="ani_bounceInLeft aniUtil_dramatic w-full">
+            <a href="./project-caremanager.html" class="ani_tada aniUtil_onMouse aniUtil_active aniUtil_onMouseRepeat h-[330px] w-full rounded-[20px] bg-[#7790D0] drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
+              <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
+                <p class="leading-tighter text-white opacity-65 text-[13px]">Android app / Web</p>
+                <h2 class="font-bold leading-tighter text-white text-[25px]">
+                  돌봄대장
+                </h2>
+  
+                <img src="./assets/images/img/projects/caremanager/caremanager-sub.png" alt="care manager" class="absolute bottom-[-5%] right-[-10%]">
+  
+                <p class="leading-tighter text-white opacity-[45%] text-[15px] mt-[10px]">
+                  <span>#  안드로이드  Android</span>
+                  <span>#  Web 구축</span> <br>
+                  <span>#  Web 구축</span>
+                  <span>#  안드로이드  Android</span>
+                </p>
+              </div>
+            </a>
+          </div>
 
-              <p class="leading-tighter text-white opacity-[65%] text-[15px] mt-[10px]">
-                <span>#  안드로이드  Android</span>
-                <span>#  Web 구축</span> <br>
-                <span>#  Web 구축</span>
-                <span>#  안드로이드  Android</span>
-              </p>
-            </div>
-          </a>
+          <div class="ani_bounceInRight aniUtil_dramatic w-full">
+            <a href="./project-washcube.html" class="ani_tada aniUtil_onMouse aniUtil_active aniUtil_onMouseRepeat h-[330px] w-full rounded-[20px] bg-[#004BB4] drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
+              <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
+                <p class="leading-tighter text-white opacity-65 text-[13px]">
+                  Kiosk
+                </p>
+  
+                <h2 class="font-bold leading-tighter text-white text-[25px] z-10">
+                  WASHCUBE
+                </h2>
+  
+                <img src="./assets/images/img/projects/washcube/washcube-sub.png" alt="washcube" class="absolute bottom-[60%] right-[2%] z-0">
+  
+                <p class="leading-tighter text-white opacity-[45%] text-[15px] mt-[10px]">
+                  <span>#  안드로이드  Android</span>
+                  <span>#  Web 구축</span> <br>
+                  <span>#  Web 구축</span>
+                  <span>#  안드로이드  Android</span>
+                </p>
+              </div>
+            </a>
+          </div>
 
-          <a href="./project-caremanager.html" class="h-[330px] w-full rounded-[20px] bg-[#7790D0] drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
-            <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
-              <p class="leading-tighter text-white opacity-65 text-[13px]">Android app / Web</p>
-              <h2 class="font-bold leading-tighter text-white text-[25px]">
-                돌봄대장
-              </h2>
+          <div class="ani_bounceInLeft aniUtil_dramatic w-full">
+            <a href="./project-aicity.html" class="ani_tada aniUtil_onMouse aniUtil_active aniUtil_onMouseRepeat h-[330px] w-full rounded-[20px] bg-[#EBDAC6] drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
+              <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
+                <p class="leading-tighter text-white opacity-65 text-[13px]">
+                  Web
+                </p>
+                <h2 class="font-bold leading-tighter text-white text-[25px]">
+                  AI도시를 부탁해
+                </h2>
+  
+                <img src="./assets/images/img/projects/aicity/aicity-sub.png" alt="aicity" class="absolute bottom-[60%] right-[0]">
+  
+                <p class="leading-tighter text-white opacity-[45%] text-[15px] mt-[10px]">
+                  <span>#  안드로이드  Android</span>
+                  <span>#  Web 구축</span> <br>
+                  <span>#  Web 구축</span>
+                  <span>#  안드로이드  Android</span>
+                </p>
+              </div>
+            </a>
+          </div>
 
-              <img src="./assets/images/img/projects/caremanager/caremanager-sub.png" alt="care manager" class="absolute bottom-[-5%] right-[-10%]">
+          <div class="ani_bounceInRight aniUtil_dramatic w-full">
+            <a href="./project-winlottery.html" class="ani_tada aniUtil_onMouse aniUtil_active aniUtil_onMouseRepeat h-[330px] w-full rounded-[20px] bg-[#7565EA] drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
+              <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
+                <p class="leading-tighter text-white opacity-65 text-[13px]">
+                  Android app
+                </p>
+  
+                <h2 class="font-bold leading-tighter text-white text-[25px] z-10">
+                  내 꿈은 로또1등
+                </h2>
+  
+                <img src="./assets/images/img/projects/winlottery/winlottery-sub.png" alt="winlottery" class="absolute bottom-[50%] right-[2%] z-0">
+                
+  
+                <p class="leading-tighter text-white opacity-[45%] text-[15px] mt-[10px]">
+                  <span>#  안드로이드  Android</span>
+                  <span>#  Web 구축</span> <br>
+                  <span>#  Web 구축</span>
+                  <span>#  안드로이드  Android</span>
+                </p>
+  
+                
+              </div>
+            </a>
+          </div>
 
-              <p class="leading-tighter text-white opacity-[45%] text-[15px] mt-[10px]">
-                <span>#  안드로이드  Android</span>
-                <span>#  Web 구축</span> <br>
-                <span>#  Web 구축</span>
-                <span>#  안드로이드  Android</span>
-              </p>
-            </div>
-          </a>
+          <div class="ani_bounceInLeft aniUtil_dramatic w-full">
+            <a href="#" class="ani_tada aniUtil_onMouse aniUtil_active aniUtil_onMouseRepeat h-[330px] w-full rounded-[20px] bg-[#292929] drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
+              <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
+                <p class="leading-tighter text-white opacity-65 text-[13px]">
+                  Android app / Web
+                </p>
+                <h2 class="font-bold leading-tighter text-white text-[25px]">
+                    PROJECT
+                </h2>
+  
+                <img src="" alt="" class="absolute bottom-[50%] left-[55%]">
+  
+                <p class="leading-tighter text-white opacity-[45%] text-[15px] mt-[10px]">
+                  <span>#  안드로이드  Android</span>
+                  <span>#  Web 구축</span> <br>
+                  <span>#  Web 구축</span>
+                  <span>#  안드로이드  Android</span>
+                </p>
+              </div>
+            </a>
+          </div>
 
-          <a href="./project-washcube.html" class="h-[330px] w-full rounded-[20px] bg-[#004BB4] drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
-            <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
-              <p class="leading-tighter text-white opacity-65 text-[13px]">
-                Kiosk
-              </p>
-
-              <h2 class="font-bold leading-tighter text-white text-[25px] z-10">
-                WASHCUBE
-              </h2>
-
-              <img src="./assets/images/img/projects/washcube/washcube-sub.png" alt="washcube" class="absolute bottom-[60%] right-[2%] z-0">
-
-              <p class="leading-tighter text-white opacity-[45%] text-[15px] mt-[10px]">
-                <span>#  안드로이드  Android</span>
-                <span>#  Web 구축</span> <br>
-                <span>#  Web 구축</span>
-                <span>#  안드로이드  Android</span>
-              </p>
-            </div>
-          </a>
-
-          <a href="./project-aicity.html" class="h-[330px] w-full rounded-[20px] bg-[#EBDAC6] drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
-            <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
-              <p class="leading-tighter text-white opacity-65 text-[13px]">
-                Web
-              </p>
-              <h2 class="font-bold leading-tighter text-white text-[25px]">
-                AI도시를 부탁해
-              </h2>
-
-              <img src="./assets/images/img/projects/aicity/aicity-sub.png" alt="aicity" class="absolute bottom-[60%] right-[0]">
-
-              <p class="leading-tighter text-white opacity-[45%] text-[15px] mt-[10px]">
-                <span>#  안드로이드  Android</span>
-                <span>#  Web 구축</span> <br>
-                <span>#  Web 구축</span>
-                <span>#  안드로이드  Android</span>
-              </p>
-            </div>
-          </a>
-
-          <a href="./project-winlottery.html" class="h-[330px] w-full rounded-[20px] bg-[#7565EA] drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
-            <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
-              <p class="leading-tighter text-white opacity-65 text-[13px]">
-                Android app
-              </p>
-
-              <h2 class="font-bold leading-tighter text-white text-[25px] z-10">
-                내 꿈은 로또1등
-              </h2>
-
-              <img src="./assets/images/img/projects/winlottery/winlottery-sub.png" alt="winlottery" class="absolute bottom-[50%] right-[2%] z-0">
-              
-
-              <p class="leading-tighter text-white opacity-[45%] text-[15px] mt-[10px]">
-                <span>#  안드로이드  Android</span>
-                <span>#  Web 구축</span> <br>
-                <span>#  Web 구축</span>
-                <span>#  안드로이드  Android</span>
-              </p>
-
-              
-            </div>
-          </a>
-
-          <a href="#" class="h-[330px] w-full rounded-[20px] bg-[#292929] drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
-            <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
-              <p class="leading-tighter text-white opacity-65 text-[13px]">
-                Android app / Web
-              </p>
-              <h2 class="font-bold leading-tighter text-white text-[25px]">
-                  PROJECT
-              </h2>
-
-              <img src="" alt="" class="absolute bottom-[50%] left-[55%]">
-
-              <p class="leading-tighter text-white opacity-[45%] text-[15px] mt-[10px]">
-                <span>#  안드로이드  Android</span>
-                <span>#  Web 구축</span> <br>
-                <span>#  Web 구축</span>
-                <span>#  안드로이드  Android</span>
-              </p>
-            </div>
-          </a>
-
-          <a href="#" class="h-[330px] w-full rounded-[20px] bg-[#292929] drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
-            <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
-              <p class="leading-tighter text-white opacity-65 text-[13px]">
-                Android app / Web
-              </p>
-              <h2 class="font-bold leading-tighter text-white text-[25px] ">
-                  PROJECT
-              </h2>
-
-              <img src="" alt="" class="absolute bottom-[50%] left-[55%]">
-
-              <p class="leading-tighter text-white opacity-[45%] text-[15px] mt-[10px]">
-                <span>#  안드로이드  Android</span>
-                <span>#  Web 구축</span> <br>
-                <span>#  Web 구축</span>
-                <span>#  안드로이드  Android</span>
-              </p>
-            </div>
-          </a>
+          <div class="ani_bounceInRight aniUtil_dramatic w-full">
+            <a href="#" class="ani_tada aniUtil_onMouse aniUtil_active aniUtil_onMouseRepeat  h-[330px] w-full rounded-[20px] bg-[#292929] drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
+              <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
+                <p class="leading-tighter text-white opacity-65 text-[13px]">
+                  Android app / Web
+                </p>
+                <h2 class="font-bold leading-tighter text-white text-[25px] ">
+                    PROJECT
+                </h2>
+  
+                <img src="" alt="" class="absolute bottom-[50%] left-[55%]">
+  
+                <p class="leading-tighter text-white opacity-[45%] text-[15px] mt-[10px]">
+                  <span>#  안드로이드  Android</span>
+                  <span>#  Web 구축</span> <br>
+                  <span>#  Web 구축</span>
+                  <span>#  안드로이드  Android</span>
+                </p>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
     </main>
@@ -349,7 +369,7 @@
       <section class="w-full mb-[120px]">
         <div class="flex justify-between items-center flex-row border-b mx-[135px] py-[20px]">
           <!-- all project arrow down -->
-          <div class="pl-[30px] flex justify-start items-center text-white gap-x-[25px]">
+          <div class="animate__animated animate__bounceInLeft pl-[30px] flex justify-start items-center text-white gap-x-[25px]">
             <p class="text-[20px] whitespace-nowrap">All Projects</p>
             <i class="fa-sharp fa-regular fa-angle-down"></i>
           </div>
@@ -357,8 +377,8 @@
           <!-- search & tags -->
           <div class="ml-[100px] flex justify-end items-center">
             <!-- tags -->
-            <div class="flex justify-end items-center gap-[25px] flex-wrap text-[#FF6767]">
-              <div class="flex justify-end items-center flex-wrap gap-x-[25px] flex-wrap">
+            <div class=" flex justify-end items-center gap-[25px] flex-wrap text-[#FF6767]">
+              <div class="animate__animated animate__bounceInRight flex justify-end items-center flex-wrap gap-x-[25px] flex-wrap">
                 <p class="leading-tighter text-[18px] whitespace-nowrap"># 안드로이드  Android</p>
                 <p class="leading-tighter text-[18px] whitespace-nowrap"># Web 구축</p>
                 <p class="leading-tighter text-[18px] whitespace-nowrap"># iOS</p>
@@ -369,7 +389,7 @@
               </div>
 
 
-              <div class="w-[440px] flex justify-end items-center flex-row  py-0 bg-white rounded text-black">
+              <div class="animate__animated animate__rubberBand w-[440px] flex justify-end items-center flex-row  py-0 bg-white rounded text-black">
                 <input type="search" class="grow text-center rounded border-0 focus:shadow-none focus:outline-none focus:border-transparent focus:ring-0"
                   placeholder="찾으시는 프로젝트가 있으신가요?">
                 <button>
@@ -386,9 +406,10 @@
 
       <!-- cards -->
       <section class="mx-[135px] pb-[120px]">
-        <div class="w-full flex justify-center items-start flex-row flex-wrap gap-[40px]">
+        <div class="animate__animated animate__bounceInLeft w-full flex justify-center items-start flex-row flex-wrap gap-[40px]">
           
-          <a href="./project-keflavik.html" class="h-[330px] w-[380px] rounded-[20px] bg-[#E8D265] drop-shadow-[0_5px_5px_rgba(255,255,255,0.25)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
+          
+          <a href="./project-keflavik.html" class="ani_tada aniUtil_onMouse aniUtil_active aniUtil_onMouseRepeat h-[330px] w-[380px] rounded-[20px] bg-[#E8D265] drop-shadow-[0_5px_5px_rgba(255,255,255,0.25)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
             <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
               <p class="leading-tighter text-white opacity-65 text-[13px]">Android app / Web</p>
               <h2 class="font-bold leading-tighter text-white text-[25px]">케플라비크</h2>
@@ -404,7 +425,7 @@
             </div>
           </a>
 
-          <a href="./project-rugolf.html" class="h-[330px] w-[380px] rounded-[20px] bg-[#26A38B] drop-shadow-[0_5px_5px_rgba(255,255,255,0.25)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
+          <a href="./project-rugolf.html" class="ani_tada aniUtil_onMouse aniUtil_active aniUtil_onMouseRepeat h-[330px] w-[380px] rounded-[20px] bg-[#26A38B] drop-shadow-[0_5px_5px_rgba(255,255,255,0.25)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
             <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
               <p class="leading-tighter text-white opacity-65 text-[13px]">Android app / Web</p>
               <h2 class="font-bold leading-tighter text-white text-[25px]">RU GOLF</h2>
@@ -420,7 +441,7 @@
             </div>
           </a>
 
-          <a href="./project-caremanager.html" class="h-[330px] w-[380px] rounded-[20px] bg-[#7790D0] drop-shadow-[0_5px_5px_rgba(255,255,255,0.25)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
+          <a href="./project-caremanager.html" class="ani_tada aniUtil_onMouse aniUtil_active aniUtil_onMouseRepeat h-[330px] w-[380px] rounded-[20px] bg-[#7790D0] drop-shadow-[0_5px_5px_rgba(255,255,255,0.25)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
             <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
               <p class="leading-tighter text-white opacity-65 text-[13px]">Android app / Web</p>
               <h2 class="font-bold leading-tighter text-white text-[25px]">
@@ -438,7 +459,7 @@
             </div>
           </a>
 
-          <a href="./project-washcube.html" class="h-[330px] w-[380px] rounded-[20px] bg-[#004BB4] drop-shadow-[0_5px_5px_rgba(255,255,255,0.25)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
+          <a href="./project-washcube.html" class="ani_tada aniUtil_onMouse aniUtil_active aniUtil_onMouseRepeat h-[330px] w-[380px] rounded-[20px] bg-[#004BB4] drop-shadow-[0_5px_5px_rgba(255,255,255,0.25)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
             <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
               <p class="leading-tighter text-white opacity-65 text-[13px]">
                 Kiosk
@@ -458,7 +479,7 @@
             </div>
           </a>
 
-          <a href="./project-aicity.html" class="h-[330px] w-[380px] rounded-[20px] bg-[#EBDAC6] drop-shadow-[0_5px_5px_rgba(255,255,255,0.25)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
+          <a href="./project-aicity.html" class="ani_tada aniUtil_onMouse aniUtil_active aniUtil_onMouseRepeat h-[330px] w-[380px] rounded-[20px] bg-[#EBDAC6] drop-shadow-[0_5px_5px_rgba(255,255,255,0.25)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
             <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
               <p class="leading-tighter text-white opacity-65 text-[13px]">
                 Web
@@ -478,7 +499,7 @@
             </div>
           </a>
 
-          <a href="./project-winlottery.html" class="h-[330px] w-[380px] rounded-[20px] bg-[#7565EA] drop-shadow-[0_5px_5px_rgba(255,255,255,0.25)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
+          <a href="./project-winlottery.html" class="ani_tada aniUtil_onMouse aniUtil_active aniUtil_onMouseRepeat h-[330px] w-[380px] rounded-[20px] bg-[#7565EA] drop-shadow-[0_5px_5px_rgba(255,255,255,0.25)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
             <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
               <p class="leading-tighter text-white opacity-65 text-[13px]">
                 Android app
@@ -498,7 +519,7 @@
             </div>
           </a>
 
-          <a href="#" class="h-[330px] w-[380px] rounded-[20px] bg-[#292929] drop-shadow-[0_5px_5px_rgba(255,255,255,0.25)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
+          <a href="#" class="ani_tada aniUtil_onMouse aniUtil_active aniUtil_onMouseRepeat h-[330px] w-[380px] rounded-[20px] bg-[#292929] drop-shadow-[0_5px_5px_rgba(255,255,255,0.25)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
             <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
               <p class="leading-tighter text-white opacity-65 text-[13px]">
                 Android app / Web
@@ -518,7 +539,7 @@
             </div>
           </a>
 
-          <a href="#" class="h-[330px] w-[380px] rounded-[20px] bg-[#292929] drop-shadow-[0_5px_5px_rgba(255,255,255,0.25)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
+          <a href="#" class="ani_tada aniUtil_onMouse aniUtil_active aniUtil_onMouseRepeat h-[330px] w-[380px] rounded-[20px] bg-[#292929] drop-shadow-[0_5px_5px_rgba(255,255,255,0.25)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
             <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
               <p class="leading-tighter text-white opacity-65 text-[13px]">
                 Android app / Web
@@ -624,6 +645,9 @@
     
   </div>
 
+  <script
+    src="https://cdn.jsdelivr.net/gh/KodingKhurram/animate.css-dynamic@main/animate.min.js">
+  </script>
   <script src="./assets/vendor/fontawesome/fontawesome.min.js"></script>
   <script src="./assets/js/dom.js"></script>
   <script src="./assets/js/function.js"></script>

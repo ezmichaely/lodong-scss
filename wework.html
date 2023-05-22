@@ -14,6 +14,10 @@
   <meta name="theme-color" content="#ffffff">
 
   <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   <link rel="stylesheet" href="./assets/styles/css/main.min.css">
   <title>Lodong | How we work</title>
 </head>
@@ -32,7 +36,7 @@
       </nav>
     </header>
 
-    <aside id="menuNav" class="fixed top-0 left-0  w-full z-50 bg-neutral-950">
+    <aside id="menuNav" class="fixed top-0 left-0  w-[100vw] z-50 bg-neutral-950">
       <div class="relative h-full w-full flex justify-center items-center flex-col">
         <div class="flex justify-start items-center flex-col w-full gap-y-[50px]">
           <a href="./index.html" class="font-bold w-full text-[24px] text-center text-white hover:font-bold">Home</a>
@@ -50,7 +54,7 @@
 
     <main>
       <section class="px-[25px] mb-[60px]">
-        <div class="pt-[20px]">
+        <div class="animate__animated animate__rotateInDownLeft animate__delay-1s pt-[20px]">
           <p class="text-[30px] whitespace-nowrap">
             <span class="text-carmine font-bold tracking-tighter">LODONG</span>
             <span class="text-jungle opacity-60 text-[27px] font-medium whitespace-nowrap">의&nbsp;개발&nbsp;프로세스</span>
@@ -61,11 +65,11 @@
 
       <!-- 01 -->
       <section class="mb-[175px]">
-        <div class="w-full h-full flex justify-start items-start overflow-hidden">
+        <div class="animate__animated animate__bounceInRight animate__delay-1s w-full h-full flex justify-start items-start overflow-hidden">
           <img src="./assets/images/img/wework/01.jpg" class="object-cover w-full h-full" alt="image01">
         </div>
 
-        <div class="mt-[60px] px-[25px]">
+        <div class="animate__animated animate__bounceInLeft animate__delay-1s mt-[60px] px-[25px]">
           <div class="whitespace-nowrap mb-[50px] flex justify-start items-end flex-row leading-[0px]">
             <p class="font-applesd text-carmine text-[80px] font-light pb-[8px] mr-[20px]">01</p>
             <p class="font-applesd text-jungle text-[30px] font-light tracking-tighter mt-[20px]">컨설팅 및 솔루션</p>
@@ -645,7 +649,7 @@
 
     document.addEventListener('DOMContentLoaded', function () {
       document.querySelector('#weworkPage').classList.add('slideUp');
-      
+
       scrollToTop();
   
       if(window.innerWidth > 1025) {

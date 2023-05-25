@@ -19,52 +19,22 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 })
 
-// $(window).scroll(function () {
-//     const scrollPosition = $(window).scrollTop();
-//     const windowHeight = $(window).height();
-
-//     $('section').each(function () {
-//         const elementOffset = $(this).offset().top;
-//         if (scrollPosition > elementOffset - windowHeight + 50) {
-//             $(this).removeClass('opacity-0');
-//             $(this).find('.right').addClass('animate__animated animate__bounceInRight');
-//             $(this).find('.left').addClass('animate__animated animate__bounceInLeft');
-//         }
-
-//         else {
-//             $(this).addClass('opacity-0');
-//             $(this).find('.right').removeClass('animate__animated animate__bounceInRight');
-//             $(this).find('.left').removeClass('animate__animated animate__bounceInLeft');
-//         }
-//     });
-// });
-
-let animatedElements = [];
-
 $(window).scroll(function () {
     const scrollPosition = $(window).scrollTop();
     const windowHeight = $(window).height();
 
     $('section').each(function () {
         const elementOffset = $(this).offset().top;
-        const elementId = $(this).attr('id');
+        if (scrollPosition > elementOffset - windowHeight + 50) {
+            $(this).removeClass('opacity-0');
+            $(this).find('.right').addClass('animate__animated animate__bounceInRight');
+            $(this).find('.left').addClass('animate__animated animate__bounceInLeft');
+        }
 
-        if (scrollPosition > elementOffset - windowHeight + 200) {
-            if (!animatedElements.includes(elementId)) {
-                $(this).removeClass('opacity-0');
-                $(this).find('.right').addClass('animate__animated animate__bounceInRight');
-                $(this).find('.left').addClass('animate__animated animate__bounceInLeft');
-                animatedElements.push(elementId);
-            }
-        } else {
-            if (animatedElements.includes(elementId)) {
-                $(this).addClass('opacity-0');
-                $(this).find('.right').removeClass('animate__animated animate__bounceInRight');
-                $(this).find('.left').removeClass('animate__animated animate__bounceInLeft');
-                animatedElements = animatedElements.filter(function (item) {
-                    return item !== elementId;
-                });
-            }
+        else {
+            $(this).addClass('opacity-0');
+            $(this).find('.right').removeClass('animate__animated animate__bounceInRight');
+            $(this).find('.left').removeClass('animate__animated animate__bounceInLeft');
         }
     });
 });

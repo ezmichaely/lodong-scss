@@ -179,12 +179,16 @@ body {
 }
 
 #weworkPage {
+  min-width: 100vw;
+  width: 100vw;
   transform: translateY(100%);
-  transition: transform 0.5s ease-in-out;
-  opacity: 0;
+  transition: transform 0.8s linear;
+  opacity: 1;
 }
 #weworkPage.slideUp {
+  width: 100vw;
   transform: translateY(0%);
+  transition: transform 0.8s linear;
   opacity: 1;
 }
 @media (max-width: 1024px) {
